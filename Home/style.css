@@ -64,15 +64,16 @@ main {
 
 .parallax {
     pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: 0.45s cubic-bezier(.2, .49, .32, .99);
 }
 
 .bg-img {
     position: absolute;
     z-index: 1;
-    width: 1700px;
+    width: 2200px;
     top: calc(50% - 200px);
     left: calc(50% + 10px);
-    transform: translate(-50%, -50%);
 }
 
 .mountain-10 {
@@ -81,7 +82,6 @@ main {
     width: 400px;
     top: calc(50% + 300px);
     left: calc(50% + 50px);
-    transform: translate(-50%, -50%);
 }
 
 .mountain-9 {
@@ -90,16 +90,14 @@ main {
     width: 300px;
     top: calc(50% + 100px);
     left: calc(50% - 300px);
-    transform: translate(-50%, -50%);
 }
 
 .mountain-8 {
     position: absolute;
     z-index: 6;
-    width: 400px;
+    width: 600px;
     top: calc(50% + 150px);
     left: calc(50% + 400px);
-    transform: translate(-50%, -50%);
 }
 
 .mountain-7 {
@@ -108,7 +106,6 @@ main {
     width: 700px;
     top: calc(50% + 200px);
     left: calc(50% - 100px);
-    transform: translate(-50%, -50%);
 }
 
 .mountain-6 {
@@ -117,7 +114,6 @@ main {
     width: 400px;
     top: calc(50% + 100px);
     left: calc(50% + 580px);
-    transform: translate(-50%, -50%);
 }
 
 .mountain-5 {
@@ -126,43 +122,38 @@ main {
     width: 300px;
     top: calc(50% + 350px);
     left: calc(50% - 40px);
-    transform: translate(-50%, -50%);
 }
 
 .mountain-4 {
     position: absolute;
     z-index: 13;
-    width: 790px;
+    width: 690px;
     top: calc(50% + 200px);
     left: calc(50% - 350px);
-    transform: translate(-50%, -50%);
 }
 
 .mountain-3 {
     position: absolute;
     z-index: 15;
-    width: 190px;
+    width: 390px;
     top: calc(50% + 300px);
     left: calc(50% + 630px);
-    transform: translate(-50%, -50%);
 }
 
 .mountain-2 {
     position: absolute;
     z-index: 5;
-    width: 590px;
-    top: calc(50% + 30px);
+    width: 690px;
+    top: calc(50% + 90px);
     left: calc(50% + 300px);
-    transform: translate(-50%, -50%);
 }
 
 .mountain-1 {
     position: absolute;
     z-index: 17;
-    width: 490px;
+    width: 590px;
     top: calc(50% + 200px);
     left: calc(50% - 550px);
-    transform: translate(-50%, -50%);
 }
 
 .text {
@@ -170,7 +161,6 @@ main {
     z-index: 8;
     top: calc(50%);
     left: calc(50%);
-    transform: translate(-50%, -50%);
     text-align: center;
     color: #fff;
     text-transform: uppercase;
@@ -194,25 +184,22 @@ main {
     width: 100px;
     top: calc(50% - 100px);
     left: calc(50% + 300px);
-    transform: translate(-50%, -50%);
 }
 
 .fog-6 {
     position: absolute;
-    z-index: 6;
-    width: 1900px;
+    z-index: 7;
+    width: 2600px;
     top: calc(50% + 150px);
     left: calc(50% + 30px);
-    transform: translate(-50%, -50%);
 }
 
 .fog-5 {
     position: absolute;
     z-index: 7;
     width: 190px;
-    top: calc(50% - 400px);
+    top: calc(50% + 400px);
     left: calc(50% + 200px);
-    transform: translate(-50%, -50%);
 }
 
 .fog-4 {
@@ -221,7 +208,6 @@ main {
     width: 190px;
     top: calc(50% + 500px);
     left: calc(50% + 100px);
-    transform: translate(-50%, -50%);
 }
 
 .fog-3 {
@@ -230,7 +216,6 @@ main {
     width: 190px;
     top: calc(50% + 500px);
     left: calc(50% + 400px);
-    transform: translate(-50%, -50%);
 }
 
 .fog-2 {
@@ -239,7 +224,6 @@ main {
     width: 190px;
     top: calc(50% - 100px);
     left: calc(50% + 200px);
-    transform: translate(-50%, -50%);
 }
 
 .sun-rays {
@@ -266,7 +250,6 @@ main {
     width: 5000%;
     top: calc(100% - 355px);
     left: calc(50%);
-    transform: translate(-50%, -50%);
 }
 
 .vignette {
@@ -276,6 +259,19 @@ main {
     height: 100%;
     top: 0;
     left: 0;
-    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 65%, rgba(0, 0, 0, 0.8) 120%);
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 65%, rgba(0, 0, 0, 0.8) 160%);
     pointer-events: none;
+}
+
+@media (max-width: 1100px) {
+    .text h2 {
+        font-size: 4.7rem;
+        line-height: 1.0rem;
+    }
+
+    .text h1 {
+        font-size: 5.8rem;
+    }
+
+
 }
