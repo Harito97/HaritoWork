@@ -10,7 +10,8 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    background-color: #fff;
+    background: transparent;
+    /* background-color: #fff; */
 }
 
 .logo {
@@ -20,7 +21,8 @@ body {
 }
 
 .header {
-    position: obsolute;
+    background: transparent;
+    position: absolute;
     z-index: 999;
     width: 100%;
     top: 0;
@@ -30,7 +32,7 @@ body {
 }
 
 header nav {
-    background-color: #fafafa;
+    background: transparent;
     max-width: 100%;
     margin: 0 auto;
     display: flex;
@@ -60,86 +62,16 @@ main {
     overflow: hidden;
 }
 
+.parallax {
+    pointer-events: none;
+}
+
 .bg-img {
     position: absolute;
     z-index: 1;
     width: 1700px;
     top: calc(50% - 200px);
     left: calc(50% + 10px);
-    transform: translate(-50%, -50%);
-}
-
-.text {
-    position: absolute;
-    z-index: 8;
-    top: calc(50%);
-    left: calc(50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff;
-    text-transform: uppercase;
-}
-
-.fog-7 {
-    position: absolute;
-    z-index: 2;
-    width: 100px;
-    top: calc(50% - 100px);
-    left: calc(50% + 300px);
-    transform: translate(-50%, -50%);
-}
-
-.fog-6 {
-    position: absolute;
-    z-index: 6;
-    width: 1900px;
-    top: calc(50% + 150px);
-    left: calc(50% + 30px);
-    transform: translate(-50%, -50%);
-}
-
-.fog-5 {
-    position: absolute;
-    z-index: 7;
-    width: 190px;
-    top: calc(50% - 400px);
-    left: calc(50% + 200px);
-    transform: translate(-50%, -50%);
-}
-
-.fog-4 {
-    position: absolute;
-    z-index: 11;
-    width: 190px;
-    top: calc(50% + 500px);
-    left: calc(50% + 100px);
-    transform: translate(-50%, -50%);
-}
-
-.fog-3 {
-    position: absolute;
-    z-index: 13;
-    width: 190px;
-    top: calc(50% + 500px);
-    left: calc(50% + 400px);
-    transform: translate(-50%, -50%);
-}
-
-.fog-2 {
-    position: absolute;
-    z-index: 15;
-    width: 190px;
-    top: calc(50% - 100px);
-    left: calc(50% + 200px);
-    transform: translate(-50%, -50%);
-}
-
-.fog-1 {
-    position: absolute;
-    z-index: 21;
-    width: 190px;
-    top: calc(50% + 500px);
-    left: calc(50%);
     transform: translate(-50%, -50%);
 }
 
@@ -231,4 +163,119 @@ main {
     top: calc(50% + 200px);
     left: calc(50% - 550px);
     transform: translate(-50%, -50%);
+}
+
+.text {
+    position: absolute;
+    z-index: 8;
+    top: calc(50%);
+    left: calc(50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    pointer-events: auto;
+}
+
+.text h2 {
+    font-weight: 400;
+    font-size: 6.0rem;
+    line-height: 1.0rem;
+}
+
+.text h1 {
+    font-weight: 500;
+    font-size: 6.5rem;
+}
+
+.fog-7 {
+    position: absolute;
+    z-index: 2;
+    width: 100px;
+    top: calc(50% - 100px);
+    left: calc(50% + 300px);
+    transform: translate(-50%, -50%);
+}
+
+.fog-6 {
+    position: absolute;
+    z-index: 6;
+    width: 1900px;
+    top: calc(50% + 150px);
+    left: calc(50% + 30px);
+    transform: translate(-50%, -50%);
+}
+
+.fog-5 {
+    position: absolute;
+    z-index: 7;
+    width: 190px;
+    top: calc(50% - 400px);
+    left: calc(50% + 200px);
+    transform: translate(-50%, -50%);
+}
+
+.fog-4 {
+    position: absolute;
+    z-index: 11;
+    width: 190px;
+    top: calc(50% + 500px);
+    left: calc(50% + 100px);
+    transform: translate(-50%, -50%);
+}
+
+.fog-3 {
+    position: absolute;
+    z-index: 13;
+    width: 190px;
+    top: calc(50% + 500px);
+    left: calc(50% + 400px);
+    transform: translate(-50%, -50%);
+}
+
+.fog-2 {
+    position: absolute;
+    z-index: 15;
+    width: 190px;
+    top: calc(50% - 100px);
+    left: calc(50% + 200px);
+    transform: translate(-50%, -50%);
+}
+
+.sun-rays {
+    position: absolute;
+    z-index: 19;
+    top: 0;
+    right: 0;
+    width: 600px;
+    pointer-events: none;
+}
+
+.black-shadow {
+    position: absolute;
+    z-index: 20;
+    top: 0;
+    right: 0;
+    width: 5000%;
+    pointer-events: none;
+}
+
+.fog-1 {
+    position: absolute;
+    z-index: 21;
+    width: 5000%;
+    top: calc(100% - 355px);
+    left: calc(50%);
+    transform: translate(-50%, -50%);
+}
+
+.vignette {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 65%, rgba(0, 0, 0, 0.8) 120%);
+    pointer-events: none;
 }
