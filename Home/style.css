@@ -60,19 +60,30 @@ main {
     overflow: hidden;
 }
 
-.bg-img{
+.bg-img {
     position: absolute;
-    width: 2800px;
-    top: calc(50% - 390px);
+    z-index: 1;
+    width: 1700px;
+    top: calc(50% - 200px);
     left: calc(50% + 10px);
     transform: translate(-50%, -50%);
-    z-index: 1;
+}
+
+.text {
+    position: absolute;
+    z-index: 8;
+    top: calc(50%);
+    left: calc(50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
 }
 
 .fog-7 {
     position: absolute;
     z-index: 2;
-    width: 1900px;
+    width: 100px;
     top: calc(50% - 100px);
     left: calc(50% + 300px);
     transform: translate(-50%, -50%);
@@ -80,144 +91,144 @@ main {
 
 .fog-6 {
     position: absolute;
-    z-index: 4;
+    z-index: 6;
     width: 1900px;
-    top: calc(50% - 100px);
-    left: calc(50% + 300px);
+    top: calc(50% + 150px);
+    left: calc(50% + 30px);
     transform: translate(-50%, -50%);
 }
 
 .fog-5 {
     position: absolute;
     z-index: 7;
-    width: 1900px;
-    top: calc(50% - 100px);
-    left: calc(50% + 300px);
+    width: 190px;
+    top: calc(50% - 400px);
+    left: calc(50% + 200px);
     transform: translate(-50%, -50%);
 }
 
 .fog-4 {
     position: absolute;
     z-index: 11;
-    width: 1900px;
-    top: calc(50% - 100px);
-    left: calc(50% + 300px);
+    width: 190px;
+    top: calc(50% + 500px);
+    left: calc(50% + 100px);
     transform: translate(-50%, -50%);
 }
 
 .fog-3 {
     position: absolute;
-    z-index:13;
-    width: 1900px;
-    top: calc(50% - 100px);
-    left: calc(50% + 300px);
+    z-index: 13;
+    width: 190px;
+    top: calc(50% + 500px);
+    left: calc(50% + 400px);
     transform: translate(-50%, -50%);
 }
 
 .fog-2 {
     position: absolute;
     z-index: 15;
-    width: 1900px;
+    width: 190px;
     top: calc(50% - 100px);
-    left: calc(50% + 300px);
+    left: calc(50% + 200px);
     transform: translate(-50%, -50%);
 }
 
 .fog-1 {
     position: absolute;
     z-index: 21;
-    width: 1900px;
-    top: calc(50% - 100px);
-    left: calc(50% + 300px);
+    width: 190px;
+    top: calc(50% + 500px);
+    left: calc(50%);
     transform: translate(-50%, -50%);
 }
 
 .mountain-10 {
     position: absolute;
     z-index: 3;
-    width: 1900px;
-    top: calc(50% - 100px);
-    left: calc(50% + 300px);
+    width: 400px;
+    top: calc(50% + 300px);
+    left: calc(50% + 50px);
     transform: translate(-50%, -50%);
 }
 
 .mountain-9 {
     position: absolute;
     z-index: 5;
-    width: 1900px;
-    top: calc(50% - 100px);
-    left: calc(50% + 300px);
+    width: 300px;
+    top: calc(50% + 100px);
+    left: calc(50% - 300px);
     transform: translate(-50%, -50%);
 }
 
 .mountain-8 {
     position: absolute;
     z-index: 6;
-    width: 1900px;
-    top: calc(50% - 100px);
-    left: calc(50% + 300px);
+    width: 400px;
+    top: calc(50% + 150px);
+    left: calc(50% + 400px);
     transform: translate(-50%, -50%);
 }
 
 .mountain-7 {
     position: absolute;
-    z-index: 8;
-    width: 1900px;
-    top: calc(50% - 100px);
-    left: calc(50% + 300px);
+    z-index: 5;
+    width: 700px;
+    top: calc(50% + 200px);
+    left: calc(50% - 100px);
     transform: translate(-50%, -50%);
 }
 
 .mountain-6 {
     position: absolute;
-    z-index: 9;
-    width: 1900px;
-    top: calc(50% - 100px);
-    left: calc(50% + 300px);
+    z-index: 2;
+    width: 400px;
+    top: calc(50% + 100px);
+    left: calc(50% + 580px);
     transform: translate(-50%, -50%);
 }
 
 .mountain-5 {
     position: absolute;
-    z-index:11;
-    width: 1900px;
-    top: calc(50% - 100px);
-    left: calc(50% + 300px);
+    z-index: 8;
+    width: 300px;
+    top: calc(50% + 350px);
+    left: calc(50% - 40px);
     transform: translate(-50%, -50%);
 }
 
 .mountain-4 {
     position: absolute;
-    z-index:13;
-    width: 1900px;
-    top: calc(50% - 100px);
-    left: calc(50% + 300px);
+    z-index: 13;
+    width: 790px;
+    top: calc(50% + 200px);
+    left: calc(50% - 350px);
     transform: translate(-50%, -50%);
 }
 
 .mountain-3 {
     position: absolute;
-    z-index:15;
-    width: 1900px;
-    top: calc(50% - 100px);
-    left: calc(50% + 300px);
+    z-index: 15;
+    width: 190px;
+    top: calc(50% + 300px);
+    left: calc(50% + 630px);
     transform: translate(-50%, -50%);
 }
 
 .mountain-2 {
     position: absolute;
-    z-index:16;
-    width: 1900px;
-    top: calc(50% - 100px);
+    z-index: 5;
+    width: 590px;
+    top: calc(50% + 30px);
     left: calc(50% + 300px);
     transform: translate(-50%, -50%);
 }
 
 .mountain-1 {
     position: absolute;
-    z-index:17;
-    width: 1900px;
-    top: calc(50% - 100px);
-    left: calc(50% + 300px);
+    z-index: 17;
+    width: 490px;
+    top: calc(50% + 200px);
+    left: calc(50% - 550px);
     transform: translate(-50%, -50%);
 }
