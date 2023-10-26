@@ -1,4 +1,4 @@
-const parallax_el = document.querySelector(".parallax");
+const parallax_el = document.querySelectorAll(".parallax");
 
 let xValue = 0, yValue = 0;
 
