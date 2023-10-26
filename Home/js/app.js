@@ -1,4 +1,4 @@
-const parallax_el = document.querySelector(".parallax");
+const parallax_el = document.querySelectorAll(".parallax");
 
 let xValue = 0, yValue = 0;
 
@@ -8,7 +8,7 @@ window.addEventListener("mousemove", (e) => {
 
 
     parallax_el.forEach((el) => {
-        el.style.transform = `translateX(calc(-50% + ${-xValue}px)) translateY(calc(-50% + ${yValue}px))`;
+        el.style.transform = `translateX(calc(-50% + ${xValue}px)) translateY(calc(-50% + ${yValue}px))`;
     });
 
 })
