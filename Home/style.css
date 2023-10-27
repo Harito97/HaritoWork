@@ -55,6 +55,12 @@ header ul a {
     font-size: 0.9rem
 }
 
+header ul a:hover {
+    background-color: #2f856b;
+    border-radius: 20px;
+    color: #fff;
+}
+
 main {
     position: relative;
     height: 100vh;
@@ -263,6 +269,7 @@ main {
     pointer-events: none;
 }
 
+/* This is for responsive later  */
 @media (max-width: 1100px) {
     .text h2 {
         font-size: 4.7rem;
@@ -272,6 +279,11 @@ main {
     .text h1 {
         font-size: 5.8rem;
     }
+}
 
-
+/* This is for navigator bar extensions */
+#Tasks {
+    position: absolute;
+    z-index: 200;
+    transform: translate(-50%, -50%);
 }
