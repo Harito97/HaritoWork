@@ -3,6 +3,7 @@
 *,
 *::before,
 *::after {
+    overflow: hidden;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,13 +12,17 @@
 body {
     font-family: "Poppins", sans-serif;
     background: transparent;
-    /* background-color: #fff; */
 }
 
 .logo {
-    padding: 0.9rem 0.9rem;
-    height: 50px;
-    width: 50px;
+    padding: 0.2rem 0.2rem;
+    height: 2%;
+    width: 2%;
+}
+
+.logo:hover {
+    background-color: #2f856b;
+    border-radius: 50px;
 }
 
 .header {
@@ -26,15 +31,14 @@ body {
     z-index: 999;
     width: 100%;
     top: 0;
-    left: 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     display: flex;
 }
 
 header nav {
     background: transparent;
-    max-width: 100%;
-    margin: 0 auto;
+    max-width: 98%;
+    margin: 0.5% 1rem 0.5%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -49,7 +53,7 @@ header ul {
 header ul a {
     text-decoration: none;
     color: #2f856b;
-    padding: 0 1.5rem;
+    padding: 0 1.0rem;
     text-transform: uppercase;
     font-weight: 550;
     font-size: 0.9rem
@@ -84,7 +88,7 @@ main {
 
 .mountain-10 {
     position: absolute;
-    z-index: 3;
+    z-index: 5;
     width: 400px;
     top: calc(50% + 300px);
     left: calc(50% + 50px);
@@ -101,9 +105,9 @@ main {
 .mountain-8 {
     position: absolute;
     z-index: 6;
-    width: 600px;
-    top: calc(50% + 150px);
-    left: calc(50% + 400px);
+    width: 800px;
+    top: calc(50% + 250px);
+    left: calc(50% + 350px);
 }
 
 .mountain-7 {
@@ -119,7 +123,7 @@ main {
     z-index: 2;
     width: 400px;
     top: calc(50% + 100px);
-    left: calc(50% + 580px);
+    left: calc(50% + 620px);
 }
 
 .mountain-5 {
@@ -135,7 +139,7 @@ main {
     z-index: 13;
     width: 690px;
     top: calc(50% + 200px);
-    left: calc(50% - 350px);
+    left: calc(50% - 380px);
 }
 
 .mountain-3 {
@@ -151,7 +155,7 @@ main {
     z-index: 5;
     width: 690px;
     top: calc(50% + 90px);
-    left: calc(50% + 300px);
+    left: calc(50% + 200px);
 }
 
 .mountain-1 {
@@ -176,12 +180,13 @@ main {
 .text h2 {
     font-weight: 400;
     font-size: 6.0rem;
-    line-height: 1.0rem;
+    line-height: 5rem;
 }
 
 .text h1 {
     font-weight: 500;
     font-size: 6.5rem;
+    line-height: 5rem;
 }
 
 .fog-7 {
