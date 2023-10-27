@@ -1,25 +1,25 @@
-// Lắng nghe sự kiện hover trên các li trong nav
-const navElements = document.querySelectorAll('nav li'); // Chỉnh sửa để chọn các li trong nav của bạn
+const navElements = document.querySelectorAll('nav li a');
+const frameURL = document.querySelector('.Tasks iframe')
 navElements.forEach((element) => {
-    element.addEventListener('mouseenter', function () {
-        // Tải nội dung từ file HTML khác
-        const xhr = new XMLHttpRequest();
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState === 4 && xhr.status === 200) {
-                // Lấy nội dung từ phản hồi của AJAX
-                const response = xhr.responseText;
-                // Hiển thị nội dung vào trung tâm màn hình
-                const contentElement = document.getElementById('Tasks'); // Chỉnh sửa để chọn phần tử div trong main của bạn
-                contentElement.innerHTML = response;
-            }
-        };
-        xhr.open('GET', '/TodoExtension/index.html', true); // Chỉnh sửa để đặt đường dẫn đến file HTML khác của bạn
-        xhr.send();
-    });
+    if (element.innerText == "TIME") {
+        element.addEventListener('mouseenter', function () {
+            frameURL.src = "../ClockExtension/clock.html";
+        });
+    } else if (element.innerText == "TASKS") {
+        element.addEventListener('mouseenter', function () {
+            frameURL.src = "../ToDoExtension/index.html";
+        });
+    } else if (element.innerText == "CALCULATOR") {
+        element.addEventListener('mouseenter', function () {
+            frameURL.src = "../CalculatorExtension/index.html";
+        });
+    } else if (element.innerText == "WEATHER") {
+        element.addEventListener('mouseenter', function () {
+            frameURL.src = "../WeatherExtension/index.html";
+        });
+    }
 
     element.addEventListener('mouseleave', function () {
-        // Xóa nội dung khi chuột rời khỏi li
-        const contentElement = document.getElementById('Tasks'); // Chỉnh sửa để chọn phần tử div trong main của bạn
-        contentElement.innerHTML = '';
+        frameURL.src = "";
     });
 });
