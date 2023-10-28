@@ -313,8 +313,9 @@ main {
 }
 
 /* This is for ripples water effect */
-/* #ripple {
+.ripples {
     position: absolute;
-    z-index: 1000;
-    pointer-events: auto;
-} */
+    z-index: 400;
+    width: 100%;
+    height: 100vh;
+}
