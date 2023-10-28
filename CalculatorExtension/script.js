@@ -21,5 +21,6 @@ function cos(x) {
 function tan(x) {
     return Math.tan(x);
 }
-const π = Math.PI
-const e = Math.E
+
+const π = Math.PI;
+const e = Math.E;

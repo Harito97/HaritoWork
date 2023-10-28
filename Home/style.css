@@ -14,7 +14,8 @@ body {
     font-family: "Poppins", sans-serif;
     background: transparent;
 }
-    /* Setup for logo */
+
+/* Setup for logo */
 .logo {
     padding: 0.2rem 0.2rem;
     /* height: 2%; */
@@ -26,7 +27,7 @@ body {
     border-radius: 50px;
 }
 
-    /* Setup for header and navigator bar */
+/* Setup for header and navigator bar */
 .header {
     background: transparent;
     position: absolute;
@@ -74,7 +75,8 @@ main {
     width: 100vw;
     overflow: hidden;
 }
-    /* Setup parallax items */
+
+/* Setup parallax items */
 .parallax {
     pointer-events: none;
     transform: translate(-50%, -50%);
@@ -266,7 +268,7 @@ main {
     left: calc(50%);
 }
 
-    /* Setup ellipse light around whole page */
+/* Setup ellipse light around whole page */
 .vignette {
     position: absolute;
     z-index: 100;
@@ -294,9 +296,9 @@ main {
 /* This is for navigator bar extensions */
 #Extension {
     position: absolute;
-    /* transform: translate(-50%, -50%); */
-    z-index: 200;
-} 
+    z-index: 30;
+    pointer-events: none;
+}
 
 #Extension iframe {
     display: block;
@@ -304,7 +306,7 @@ main {
     height: 100vh;
     border: none;
     overflow: hidden;
-    transform: scale(0.5) translate(-30px, -30px);    
-    transform-origin: center ;
+    transform: scale(0.5) translate(-30px, -30px);
+    transform-origin: center;
     border-radius: 15px;
 }
