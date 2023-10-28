@@ -7,7 +7,7 @@ navElements.forEach((element) => {
         });
     } else if (element.innerText == "TASKS") {
         element.addEventListener('mouseenter', function () {
-            frameURL.src = "../ToDoExtension/index.html";
+            frameURL.src = "../TodoExtension/index.html";
         });
     } else if (element.innerText == "CALCULATOR") {
         element.addEventListener('mouseenter', function () {

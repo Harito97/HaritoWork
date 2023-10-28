@@ -8,28 +8,30 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    font-weight: 900;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(./background.jpg) no-repeat;
+    /* background: url(./background.jpg) no-repeat; */
     background-position: center;
     background-size: cover;
 }
 
 .container {
-    width: 400px;
-    height: auto;
+    width: 100%;
+    height: 100%;
     min-height: 400px;
     padding: 30px;
     background: transparent;
-    border: 2px solid #e6b7eca1;
+    border: 3px solid rgb(252, 252, 252, 0.3);
     border-radius: 10px;
     backdrop-filter: blur(15px);
 }
 
 h1 {
-    color: #eee;
+    /* color: #eee; */
+    color: #2f856b;
     text-align: center;
     margin-bottom: 36px;
 }
@@ -44,32 +46,38 @@ h1 {
     flex: 1;
     outline: none;
     padding: 10px 10px 10px 20px;
-    background-color: transparent;
-    border: 2px solid #e6b7eca1;
+    background-color: #fff;
+    /* border: 2px solid #e6b7eca1; */
+    border: 2px solid #2f856b;
     border-radius: 30px;
-    color: #eee;
-    font-size: 16px;
+    /* color: #eee; */
+    color: #2f856b;
+    font-size: 30px;
     margin-right: 10px;
 }
 
-.todo-input::placeholder {
-    color: #bfbfbf;
-}
+/* .todo-input::placeholder {
+    /* color: #bfbfbf; >
+    color: black;
+} */
 
 .add-button {
     border: none;
     outline: none;
-    background: #e6b7eca1;
-    color: #fff;
+    /* background: #e6b7eca1; */
+    background: #fff;
+    /* color: #fff; */
+    color: #2f856b;
     font-size: 35px;
     cursor: pointer;
-    border-radius: 40px;
-    width: 40px;
-    height: 40px;
+    border-radius: 60px;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #2f856b;
 }
 
 .empty-image {
-    width: 70%;
+    width: 20%;
     /* display: flex; */
     margin: 30px auto 0;
     display: block;
@@ -78,28 +86,31 @@ h1 {
 }
 
 .todo {
+    font-size: 250%;
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #463c7b;
+    background-color: #fff;
     border-radius: 5px;
     margin: 10px 0;
     padding: 10px 12px;
-    border: 2px solid #e6b7eca1;
+    border: 2px solid #2f856b;
     transition: all 0.2s ease;
 }
 
 .todo:first-child {
     margin-top: 0;
+    background-color: wheat;
 }
 
 .todo:last-child {
     margin-bottom: 0;
+    background-color: wheat;
 }
 
 .todo:hover {
-    background-color: #e6b7eca1;
+    background-color: whitesmoke;
 }
 
 .todo label {
@@ -108,7 +119,8 @@ h1 {
     display: flex;
     align-items: center;
     font-family: 'Roboto', sans-serif;
-    color: #eee;
+    /* color: #eee; */
+    color: #2f856b;
 }
 
 .todo span {
@@ -124,7 +136,7 @@ span::before {
     position: absolute;
     margin-left: -30px;
     border-radius: 100px;
-    border: 2px solid #e6b7eca1;
+    border: 2px solid #2f856b;
 }
 
 input[type='checkbox'] {
@@ -137,19 +149,20 @@ input:checked+span {
 
 .todo:hover input:checked+span::before,
 input:checked+span::before {
-    background: url(./check.svg) 50% 50% no-repeat #09bb21;
+    background: #09bb21;
     border-color: #09bb21;
 }
 
 .todo:hover span::before {
-    border-color: #eee;
+    border-color: #09bb21;
 }
 
 .todo .delete-btn {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    color: #eee;
+    /* color: #eee; */
+    color: #2f856b;
     font-size: 24px;
 }
 
@@ -180,31 +193,38 @@ input:checked+span::before {
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
+    font-size: 150%;
 }
 
 .filter {
-    color: #eee;
+    /* color: #eee; */
+    color: #2f856b;
     padding: 5px 15px;
     border-radius: 100px;
-    border: 2px solid #e6b7eca1;
+    border: 2px solid #2f856b;
     transition: all 0.2s ease;
     cursor: pointer;
+    background-color: wheat;
 }
 
 .filter.active,
 .filter:hover {
-    background-color: #e6b7eca1;
+    border: 2px solid #2f856b;
 }
 
 .delete-all {
     display: flex;
-    color: #eee;
-    padding: 7px 15px;
+    /* color: #eee; */
+    color: #2f856b;
+    padding: 5px 5px;
     cursor: pointer;
     transition: all 0.2s ease;
+    border: 2px solid #2f856b;
+    border-radius: 5px;
+    background-color: wheat;
 }
 
 .delete-all:hover {
-    border-radius: 5px;
-    background-color: #e6b7eca1;
+    background-color: red;
+    color: white;
 }
