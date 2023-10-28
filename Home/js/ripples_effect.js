@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $('.ripples').ripples({
-        resolution: 512,
+        resolution: 600,
         dropRadius: 10,
-        perturbance: 0.02,
+        perturbance: 0.4,
     });
 })

@@ -7,6 +7,7 @@
 }
 
 body {
+    overflow: hidden;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     height: 100vh;
@@ -30,7 +31,6 @@ body {
 }
 
 h1 {
-    /* color: #eee; */
     color: #2f856b;
     text-align: center;
     margin-bottom: 36px;
@@ -47,10 +47,8 @@ h1 {
     outline: none;
     padding: 10px 10px 10px 20px;
     background-color: #fff;
-    /* border: 2px solid #e6b7eca1; */
     border: 2px solid #2f856b;
     border-radius: 30px;
-    /* color: #eee; */
     color: #2f856b;
     font-size: 30px;
     margin-right: 10px;
@@ -64,9 +62,7 @@ h1 {
 .add-button {
     border: none;
     outline: none;
-    /* background: #e6b7eca1; */
     background: #fff;
-    /* color: #fff; */
     color: #2f856b;
     font-size: 35px;
     cursor: pointer;
@@ -119,7 +115,6 @@ h1 {
     display: flex;
     align-items: center;
     font-family: 'Roboto', sans-serif;
-    /* color: #eee; */
     color: #2f856b;
 }
 
@@ -161,7 +156,6 @@ input:checked+span::before {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    /* color: #eee; */
     color: #2f856b;
     font-size: 24px;
 }
@@ -197,7 +191,6 @@ input:checked+span::before {
 }
 
 .filter {
-    /* color: #eee; */
     color: #2f856b;
     padding: 5px 15px;
     border-radius: 100px;
@@ -214,7 +207,6 @@ input:checked+span::before {
 
 .delete-all {
     display: flex;
-    /* color: #eee; */
     color: #2f856b;
     padding: 5px 5px;
     cursor: pointer;
