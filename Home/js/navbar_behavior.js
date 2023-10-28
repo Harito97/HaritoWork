@@ -4,7 +4,7 @@ navElements.forEach((element) => {
     if (element.innerText == "TIME") {
         element.addEventListener('mouseenter', function () {
             frameURL.src = "../ClockExtension/clock.html";
-            frameURL.style.pointerEvents = "auto"; // Đặt lại giá trị pointer-events thành auto
+            frameURL.style.pointerEvents = "none"; // Đặt lại giá trị pointer-events thành auto
         });
     } else if (element.innerText == "TASKS") {
         element.addEventListener('mouseenter', function () {
