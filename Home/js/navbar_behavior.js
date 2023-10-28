@@ -9,17 +9,17 @@ navElements.forEach((element) => {
                 // Lấy nội dung từ phản hồi của AJAX
                 const response = xhr.responseText;
                 // Hiển thị nội dung vào trung tâm màn hình
-                const contentElement = document.getElementById('Tasks'); // Chỉnh sửa để chọn phần tử div trong main của bạn
+                const contentElement = document.getElementById('TodoExtension');
                 contentElement.innerHTML = response;
             }
         };
-        xhr.open('GET', '/TodoExtension/index.html', true); // Chỉnh sửa để đặt đường dẫn đến file HTML khác của bạn
+        xhr.open('GET', '/TodoExtension/index.html', true); 
         xhr.send();
     });
 
-    element.addEventListener('mouseleave', function () {
-        // Xóa nội dung khi chuột rời khỏi li
-        const contentElement = document.getElementById('Tasks'); // Chỉnh sửa để chọn phần tử div trong main của bạn
+    element.addEventListener('click', function () {
+        // Xóa nội dung khi chuột click li
+        const contentElement = document.getElementById('TodoExtension');
         contentElement.innerHTML = '';
     });
 });
