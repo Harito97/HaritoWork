@@ -311,3 +311,10 @@ main {
     transform-origin: center;
     border-radius: 15px;
 }
+
+/* This is for ripples water effect */
+#ripple {
+    position: absolute;
+    z-index: 40;
+    pointer-events: none;
+}
