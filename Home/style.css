@@ -312,6 +312,27 @@ main {
     border-radius: 15px;
 }
 
+/* This is for Logo Bubble Water Animation */
+#Bubble_Water_Animation {
+    overflow: hidden;
+    position: absolute;
+    z-index: 29;
+    pointer-events: none;
+    top: 40%;
+    left: 50%;
+    width: 10%;
+}
+
+#Bubble_Water_Animation iframe {
+    pointer-events: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
 /* This is for ripples water effect */
 .ripples {
     position: absolute;

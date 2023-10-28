@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+section {
+    position: relative;
+    display: flex;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    filter: blur(10px);
+}
+
+.bubble {
+    position: flex;
+    width: 500px;
+    height: 500px;
+    background: transparent;
+    filter: blur(10px);
+}

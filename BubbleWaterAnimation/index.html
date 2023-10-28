@@ -1,0 +1,42 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Water Animation</title>
+</head>
+
+<body>
+    <section>
+        <div class="bubble">
+            <svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <clipPath id="a">
+                        <path fill="currentColor"
+                            d="M875 716.5Q750 933 500 933T125 716.5Q0 500 125 283.5T500 67q250 0 375 216.5t0 433Z" />
+                    </clipPath>
+                </defs>
+                <g clip-path="url(#a)">
+                    <path fill="none" stroke="#f0f0f0" stroke-width="60">
+                        <animate attributeName="d" 
+                            dur="10000ms" 
+                            repeatCount="indefinite" 
+                            values="M875 716.5Q750 933 500 933T125 716.5Q0 500 125 283.5T500 67q250 0 375 216.5t0 433Z;
+                                M830 658.5Q683 817 497 822T186.5 663.5Q62 500 159 288.5t331.5-195Q725 110 851 305t-21 353.5Z;
+                                M822 697.5Q728 895 500.5 894T174 696.5Q75 500 167.5 292T492 98q232 14 328 208t2 391.5Z;
+                                M830.5 684Q713 868 511.5 848.5T254 664.5Q198 500 255 337t245-163q188 0 318 163t12.5 347Z;
+                                M769 692q-47 192-256 170T156.5 670Q9 500 148.5 316.5t348-177.5q208.5 6 264 183.5T769 692Z;
+                                M833 690Q720 880 502.5 876.5T210 686.5q-75-186.5 10.5-354T521 128q215-37 320 167.5T833 690Z;
+                                M858.5 708Q740 916 507 903.5t-357.5-208Q25 500 164.5 330.5t345.5-187Q716 126 846.5 313t12 395Z;
+                                M830 658.5Q683 817 497 822T186.5 663.5Q62 500 159 288.5t331.5-195Q725 110 851 305t-21 353.5Z;
+                                                    
+                                M875 716.5Q750 933 500 933T125 716.5Q0 500 125 283.5T500 67q250 0 375 216.5t0 433Z">
+                        </animate>
+                    </path>
+                </g>
+            </svg>
+        </div>
+    </section>
+</body>
+
+</html>
