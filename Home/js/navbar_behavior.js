@@ -30,12 +30,12 @@ navElements.forEach((element) => {
         });
     } else if (element.innerText == "WEATHER") {
         element.addEventListener('mouseenter', function () {
-            frameExtension.src = "../WeatherExtension/index.html";
+            frameExtension.src = "../WeatherExtension/weather.html";
             frameExtension.style.pointerEvents = "auto"; // Đặt lại giá trị pointer-events thành auto
         });
     } else if (element.innerText == "ACCOUNT") {
         element.addEventListener('mouseenter', function () {
-            frameExtension.src = "../WeatherExtension/index.html";
+            frameExtension.src = "../AccountExtension/login.html";
             frameExtension.style.pointerEvents = "auto"; // Đặt lại giá trị pointer-events thành auto
         });
     }

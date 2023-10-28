@@ -307,7 +307,7 @@ main {
     height: 100vh;
     border: none;
     overflow: hidden;
-    transform: scale(0.5) translate(-30px, -30px);
+    transform: scale(0.7) translate(-30px, -30px);
     transform-origin: center;
     border-radius: 15px;
 }

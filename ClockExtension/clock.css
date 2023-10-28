@@ -33,7 +33,7 @@
     justify-content: center;
     backdrop-filter: blur(20px);
     border: 3px solid rgb(252, 252, 252, 0.3);
-    border-radius: 5%;
+    border-radius: 25px;
 }
 
 /* .container::before {
