@@ -4,13 +4,15 @@
     /* font-family: 'Times New Roman'; */
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 900;
+    overflow: hidden;
     box-sizing: border-box;
 }
 
 .container {
     width: 100%;
     height: 100vh;
-    background: #485b83;
+    /* background: #485b83; */
+    background: transparent;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -4,73 +4,86 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
-.hero{
+
+.harito {
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(45deg, #08001f, #30197d);
-    color: #fff;
+    /* background: linear-gradient(45deg, #08001f, #30197d); */
+    background: transparent;
+    color: #2f856b;
     position: relative;
 }
-.container{
-    width: 800px;
-    height: 180px;
+
+.container {
+    width: 70%;
+    height: 70%;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
-.clock{
+
+.clock {
     width: 100%;
     height: 100%;
-    background: rgba(135, 0, 255, 0.11);
+    background: rgba(223, 221, 226, 0.11);
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    backdrop-filter: blur(80px);
+    backdrop-filter: blur(20px);
+    border: 3px solid rgb(252, 252, 252, 0.3);
+    border-radius: 5%;
 }
-.container::before{
+
+/* .container::before {
     content: '';
     width: 180px;
     height: 180px;
-    background: #f41b75;
-    border-radius: 5px;
+    background: #66a073;
+    border-radius: 50px;
     position: absolute;
-    left: -50px;
-    top: -50px;
+    left: 10px;
+    top: 10px;
     z-index: -1;
 }
+
 .container::after {
     content: '';
     width: 180px;
     height: 180px;
-    background: #419aff;
-    border-radius: 50%;
+    background: #5ae9ee;
+    border-radius: 60%;
     position: absolute;
-    right: -30px;
-    bottom: -30px;
+    right: 10px;
+    bottom: 10px;
     z-index: -1;
-}
-.clock span{
-    font-size: 80px;
-    width: 130px;
+} */
+
+.clock span {
+    font-size: 900%;
+    width: 15%;
     display: inline-block;
     text-align: center;
     position: relative;
 }
-.clock span::after{
+
+/* .clock span::after {
     font-size: 16px;
     padding: absolute;
     bottom: -5px;
     left: 50%;
     transform: translateX(-50%);
 }
-#hrs::after{
+
+#hrs::after {
     content: 'HOURS';
 }
+
 #min::after {
     content: 'MINS';
 }
+
 #sec::after {
     content: 'SECS';
-}
+} */
