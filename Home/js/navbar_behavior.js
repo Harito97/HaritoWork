@@ -19,13 +19,13 @@ navElements.forEach((element) => {
     } else if (element.innerText == "WEATHER") {
         element.addEventListener('mouseenter', function () {
             frameURL.src = "../WeatherExtension/index.html";
+            frameURL.style.pointerEvents = "auto"; // Đặt lại giá trị pointer-events thành auto
         });
-        frameURL.style.pointerEvents = "auto"; // Đặt lại giá trị pointer-events thành auto
     } else if (element.innerText == "ACCOUNT") {
         element.addEventListener('mouseenter', function () {
             frameURL.src = "../WeatherExtension/index.html";
+            frameURL.style.pointerEvents = "auto"; // Đặt lại giá trị pointer-events thành auto
         });
-        frameURL.style.pointerEvents = "auto"; // Đặt lại giá trị pointer-events thành auto
     }
 
     element.addEventListener('click', function () {
