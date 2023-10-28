@@ -292,8 +292,30 @@ main {
 } */
 
 /* This is for navigator bar extensions */
+/* ======= */
+
+/* .Tasks {
+    position: absolute;
+    z-index: 200;
+    /* background-color: #2f856b; */
+    /* width: auto;
+    height: auto; */
+    /* border-radius: 10px; */
+}
+
+.Tasks iframe {
+    display: block;
+    width: 100vw;
+    height: 50vh;
+    border: none;
+    overflow: hidden;
+    transform: scale(0.5) translate(-30px, 15px);
+    transform-origin: top right;
+    border-radius: 15px; */
+/* ======= */
 #TodoExtension {
     position: absolute;
     z-index: 2000;
     transform: translate(-50%, -50%);
+
 }
