@@ -9,11 +9,12 @@
     box-sizing: border-box;
 }
 
+/* Setup for body */
 body {
     font-family: "Poppins", sans-serif;
     background: transparent;
 }
-
+    /* Setup for logo */
 .logo {
     padding: 0.2rem 0.2rem;
     /* height: 2%; */
@@ -25,6 +26,7 @@ body {
     border-radius: 50px;
 }
 
+    /* Setup for header and navigator bar */
 .header {
     background: transparent;
     position: absolute;
@@ -65,13 +67,14 @@ header ul a:hover {
     color: #fff;
 }
 
+/* Setup for main */
 main {
     position: relative;
     height: 100vh;
     width: 100vw;
     overflow: hidden;
 }
-
+    /* Setup parallax items */
 .parallax {
     pointer-events: none;
     transform: translate(-50%, -50%);
@@ -263,6 +266,7 @@ main {
     left: calc(50%);
 }
 
+    /* Setup ellipse light around whole page */
 .vignette {
     position: absolute;
     z-index: 100;
@@ -288,7 +292,9 @@ main {
 } */
 
 /* This is for navigator bar extensions */
-.Tasks {
+/* ======= */
+
+/* .Tasks {
     position: absolute;
     z-index: 200;
     /* background-color: #2f856b; */
@@ -305,5 +311,11 @@ main {
     overflow: hidden;
     transform: scale(0.5) translate(-30px, 15px);
     transform-origin: top right;
-    border-radius: 15px;
+    border-radius: 15px; */
+/* ======= */
+#TodoExtension {
+    position: absolute;
+    z-index: 2000;
+    transform: translate(-50%, -50%);
+
 }
